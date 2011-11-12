@@ -1,14 +1,16 @@
 $ ->
 
-  $('#contenedor_texto').hide()
+  $('#mapa, #contenedor_texto').hide()
 
   $('#barra a').click (e) ->
     e.preventDefault()
-    $('#contenido .texto').hide()
+    $('#contenido .texto, #mapa, #contenedor_texto').hide()
     titulo = $(this).data('titulo')
-    console.log titulo
-    $("#contenido .texto[data-titulo='#{titulo}']").show()
-    $('#contenedor_texto').show()
+    unless titulo == 'mapa'
+      $("#contenido .texto[data-titulo='#{titulo}']").show()
+      $('#contenedor_texto').show()
+    else
+      $('#mapa').show()
 
   $('#titulo').click (e) ->
     e.preventDefault()
