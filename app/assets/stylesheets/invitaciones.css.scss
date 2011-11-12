@@ -1,0 +1,57 @@
+// Place all the styles related to the invitaciones controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image:url('color_fondo.png');
+}
+
+#contenido {
+  width:717px;
+  height:722px;
+  background-image:url('fondo.png');
+  position:absolute;
+  top:90px;
+  left:400px;
+
+  .texto {
+    text-align:center;
+    font:26px 'Trebuchet MS', Arial, sans-serif;
+    background:white;
+    width:570px;
+    height:70px;
+    top:270px;
+    left:60px;
+    position: absolute;
+    border-radius:20px;
+    border:5px solid black;
+    padding:50px 5px;
+    display:none;
+  }
+}
+
+#barra {
+  position:absolute;
+  top:90px;
+  left:60px;
+
+  a {
+    text-transform:uppercase;
+    display:block;
+    color:white;
+    font: 24px 'Trebuchet MS', Arial, sans-serif;
+    text-decoration:none;
+    background:black;
+    width:185px;
+    margin:5px;
+    text-align:center;
+    padding:10px;
+    border-radius:10px;
+    border:3px solid black;
+  }
+
+  a:hover {
+    color:black;
+    background:white;
+  }
+}
