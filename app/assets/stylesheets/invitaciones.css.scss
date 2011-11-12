@@ -11,22 +11,25 @@ body {
   height:722px;
   background-image:url('fondo.png');
   position:absolute;
-  top:90px;
+  top:0px;
   left:400px;
 
-  .texto {
-    text-align:center;
-    font:26px 'Trebuchet MS', Arial, sans-serif;
+  #contenedor_texto {
+    display:table;
     background:white;
     width:570px;
-    height:70px;
+    height:170px;
     top:270px;
     left:60px;
     position: absolute;
     border-radius:20px;
     border:5px solid black;
-    padding:50px 5px;
-    display:none;
+
+    .texto {
+      display: table-cell; vertical-align: middle;
+      text-align:center;
+      font:26px 'Trebuchet MS', Arial, sans-serif;
+    }
   }
 }
 
