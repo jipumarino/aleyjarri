@@ -6,6 +6,14 @@ body {
   background-image:url('color_fondo.png');
 }
 
+#titulo {
+  font: 50px 'Pinyon Script', cursive;
+  color:white;
+  position:absolute;
+  top:15px;
+  left:125px;
+}
+
 #contenido {
   width:717px;
   height:722px;
@@ -43,7 +51,6 @@ body {
     display:block;
     color:white;
     font: 24px 'Trebuchet MS', Arial, sans-serif;
-    text-decoration:none;
     background:black;
     width:185px;
     margin:5px;
@@ -57,4 +64,8 @@ body {
     color:black;
     background:white;
   }
+}
+
+a {
+  text-decoration:none;
 }

@@ -9,3 +9,7 @@ $ ->
     console.log titulo
     $("#contenido .texto[data-titulo='#{titulo}']").show()
     $('#contenedor_texto').show()
+
+  $('#titulo').click (e) ->
+    e.preventDefault()
+    $('#contenedor_texto ').hide()
