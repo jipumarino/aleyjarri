@@ -14,4 +14,4 @@ $ ->
 
   $('#titulo').click (e) ->
     e.preventDefault()
-    $('#contenedor_texto ').hide()
+    $('#contenedor_texto, #mapa').hide()
