@@ -31,6 +31,10 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem 'passenger'
+gem 'capistrano'
+
+gem 'execjs'
+gem 'therubyracer'
 
 group :test do
   # Pretty printed test output
