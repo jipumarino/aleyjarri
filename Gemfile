@@ -32,6 +32,7 @@ gem 'jquery-rails'
 
 gem 'passenger'
 gem 'capistrano'
+gem 'mysql2'
 
 gem 'execjs'
 gem 'therubyracer'
