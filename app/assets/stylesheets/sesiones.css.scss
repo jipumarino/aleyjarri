@@ -1,0 +1,30 @@
+#login {
+  text-align:center;
+  behavior: url(/PIE.htc);
+  border-radius:20px;
+  border:5px solid black;
+  width:400px;
+  margin:100px auto auto auto;
+
+  background-color:white;
+
+  form {
+    margin:50px;
+    input {
+      font: 40px 'Trebuchet MS', Arial, sans-serif;
+      width:100%;
+      margin:20px 0;
+      border:2px solid black;
+      padding:10px;
+      behavior: url(/PIE.htc);
+      border-radius:10px;
+      display:block;
+    }
+
+    input[type=submit] {
+      text-transform:uppercase;
+      background:black;
+      color:white;
+    }
+  }
+}

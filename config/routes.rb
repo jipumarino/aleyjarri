@@ -1,6 +1,12 @@
 Aleyjarri::Application.routes.draw do
   resources :invitaciones
 
+  controller :sesiones do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
