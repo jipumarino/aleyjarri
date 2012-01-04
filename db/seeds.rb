@@ -1,3 +1,4 @@
+# Encoding: UTF-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -141,4 +142,58 @@ Usuario.create([
   {nombre: 'hil.esp01', contrasena: 'heislp01'},
   {nombre: 'ade.rey02', contrasena: 'ardeey02'},
   {nombre: 'jua.jaq01', contrasena: 'jjuaaq01'}
+])
+
+Regalo.create([
+  {detalle: 'Pasaje Santiago -Paris -Santiago (1/8)', cantidad: 1, precio_pesos_chilenos: 84835},
+  {detalle: 'Eurorail 5 Países (1/4)', cantidad: 1, precio_pesos_chilenos: 47235},
+  {detalle: 'Eurorail 2 Países (1/2)', cantidad: 1, precio_pesos_chilenos: 43710},
+  {detalle: 'Eurorail 1 País', cantidad: 1, precio_pesos_chilenos: 23970},
+  {detalle: 'AirfranceBus 1', cantidad: 2, precio_pesos_chilenos: 19740},
+  {detalle: 'Billet Paris - Saint Malo - Paris', cantidad: 1, precio_pesos_chilenos: 46319},
+  {detalle: 'Pantheon', cantidad: 2, precio_pesos_chilenos: 10575},
+  {detalle: 'Musée Rodin', cantidad: 2, precio_pesos_chilenos: 12690},
+  {detalle: 'Musée Du Quai Branly', cantidad: 2, precio_pesos_chilenos: 11985},
+  {detalle: 'Catacombes', cantidad: 2, precio_pesos_chilenos: 9870},
+  {detalle: 'Arc de Triomphe', cantidad: 2, precio_pesos_chilenos: 12690},
+  {detalle: 'Centre Pompidou / Musée D\'Art Moderne', cantidad: 2, precio_pesos_chilenos: 14100},
+  {detalle: 'Musée de Louvre', cantidad: 2, precio_pesos_chilenos: 18330},
+  {detalle: 'DisneyLand Paris Passe partout', cantidad: 2, precio_pesos_chilenos: 78960},
+  {detalle: 'Alimentación x 5 días', cantidad: 1, precio_pesos_chilenos: 50000},
+  {detalle: 'Alimentación x 10 días', cantidad: 1, precio_pesos_chilenos: 100000},
+  {detalle: 'Alimentación x 15 días', cantidad: 1, precio_pesos_chilenos: 150000},
+  {detalle: 'Museo Thyssen Bornemisza', cantidad: 2, precio_pesos_chilenos: 8460},
+  {detalle: 'Museo del Prado', cantidad: 2, precio_pesos_chilenos: 14100},
+  {detalle: 'Centro de Arte Reina Sofia', cantidad: 2, precio_pesos_chilenos: 8460},
+  {detalle: 'Billete 10 viajes Combinado Metro', cantidad: 1, precio_pesos_chilenos: 21150},
+  {detalle: 'Vista Coliseo', cantidad: 2, precio_pesos_chilenos: 15510},
+  {detalle: 'Museo Vaticano', cantidad: 2, precio_pesos_chilenos: 19740},
+  {detalle: 'Castillo Saint-Angelo', cantidad: 2, precio_pesos_chilenos: 9870},
+  {detalle: 'Piazza del Campidoglio / Musei Capitolini', cantidad: 2, precio_pesos_chilenos: 9165},
+  {detalle: 'Museo Nazionale Romano', cantidad: 2, precio_pesos_chilenos: 9870},
+  {detalle: 'Catacumbas de San Calisto', cantidad: 2, precio_pesos_chilenos: 7050},
+  {detalle: 'Terme di Caracalla', cantidad: 2, precio_pesos_chilenos: 8460},
+  {detalle: 'Galleria Nazionale d\'arte antica', cantidad: 2, precio_pesos_chilenos: 7050},
+  {detalle: 'BTI-Ticket Turista Integrado', cantidad: 2, precio_pesos_chilenos: 15510},
+  {detalle: 'Palazzo Ducale', cantidad: 2, precio_pesos_chilenos: 16920},
+  {detalle: 'Collezione Peggy Guggenheim', cantidad: 2, precio_pesos_chilenos: 14100},
+  {detalle: 'Palazzo Grassi', cantidad: 2, precio_pesos_chilenos: 14100},
+  {detalle: 'Hotel Bernardi', cantidad: 1, precio_pesos_chilenos: 38775},
+  {detalle: 'Ristorante La Bitta', cantidad: 1, precio_pesos_chilenos: 28200},
+  {detalle: 'Ristoteca Oniga', cantidad: 1, precio_pesos_chilenos: 32430},
+  {detalle: 'Promenade Gondola', cantidad: 1, precio_pesos_chilenos: 17625},
+  {detalle: 'Amsterdam Card 24 hrs', cantidad: 1, precio_pesos_chilenos: 23265},
+  {detalle: 'Amsterdam Card 48 hrs', cantidad: 1, precio_pesos_chilenos: 30315},
+  {detalle: 'Amsterdam Card 72 hrs', cantidad: 1, precio_pesos_chilenos: 37365},
+  {detalle: 'Nieuwe kerk', cantidad: 2, precio_pesos_chilenos: 5640},
+  {detalle: 'Oude Kerk', cantidad: 2, precio_pesos_chilenos: 7050},
+  {detalle: 'Amsterdams Historish Museum', cantidad: 2, precio_pesos_chilenos: 14100},
+  {detalle: 'Museum Het Rembrandthuis', cantidad: 2, precio_pesos_chilenos: 11280},
+  {detalle: 'Anne Frank Huis', cantidad: 2, precio_pesos_chilenos: 11985},
+  {detalle: 'FOAM', cantidad: 2, precio_pesos_chilenos: 9870},
+  {detalle: 'Rijksmuseum', cantidad: 2, precio_pesos_chilenos: 14100},
+  {detalle: 'Artis', cantidad: 1, precio_pesos_chilenos: 12690},
+  {detalle: 'Quentin Hotel', cantidad: 1, precio_pesos_chilenos: 31725},
+  {detalle: 'Hotel Nadia', cantidad: 1, precio_pesos_chilenos: 38775},
+  {detalle: 'Canal Bus', cantidad: 1, precio_pesos_chilenos: 12690}
 ])
