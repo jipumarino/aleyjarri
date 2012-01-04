@@ -22,7 +22,7 @@ body {
   top:0px;
   left:400px;
 
-  #mapa {
+  .grande {
     display:table;
     background:white;
     width:570px;
@@ -38,6 +38,21 @@ body {
     iframe {
       width: 540px;
       height: 540px;
+    }
+
+  }
+
+  #regalo {
+    display:block;
+    overflow-y:auto;
+    overflow-x:hidden;
+    font:16px 'Trebuchet MS', Arial, sans-serif;
+
+    table {
+      td {
+        padding:4px 10px;
+      }
+
     }
   }
 
@@ -58,6 +73,7 @@ body {
       text-align:center;
       font:26px 'Trebuchet MS', Arial, sans-serif;
     }
+
   }
 }
 
@@ -89,4 +105,16 @@ body {
 
 a {
   text-decoration:none;
+}
+
+a.reservar {
+  border-radius:4px;
+  border:1px solid black;
+  color:black;
+  padding: 1px 4px;
+}
+
+a.reservar:hover {
+  color:white;
+  background:black;
 }

@@ -1,16 +1,16 @@
 $ ->
 
-  $('#mapa, #contenedor_texto').hide()
+  $('#contenido .grande, #contenedor_texto').hide()
 
   $('#barra a').click (e) ->
     e.preventDefault()
-    $('#contenido .texto, #mapa, #contenedor_texto').hide()
+    $('#contenido .texto, #contenido .grande, #contenedor_texto').hide()
     titulo = $(this).data('titulo')
-    unless titulo == 'mapa'
+    unless ['mapa', 'regalo'].indexOf(titulo) != -1
       $("#contenido .texto[data-titulo='#{titulo}']").show()
       $('#contenedor_texto').show()
     else
-      $('#mapa').show()
+      $('#'+titulo).show()
 
   $('#titulo').click (e) ->
     e.preventDefault()
