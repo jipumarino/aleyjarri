@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  detalle: MyString
+  cantidad: 1
+  precio_pesos_chilenos: 1
+
+two:
+  detalle: MyString
+  cantidad: 1
+  precio_pesos_chilenos: 1

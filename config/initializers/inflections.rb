@@ -6,4 +6,5 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'invitacion', 'invitaciones'
   inflect.irregular 'sesion', 'sesiones'
   inflect.irregular 'usuario', 'usuarios'
+  inflect.irregular 'regalo', 'regalos'
 end
