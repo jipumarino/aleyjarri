@@ -46,7 +46,7 @@ body {
     display:block;
     overflow-y:auto;
     overflow-x:hidden;
-    font:16px 'Trebuchet MS', Arial, sans-serif;
+    font:15px 'Trebuchet MS', Arial, sans-serif;
 
     table {
       td {
@@ -112,9 +112,23 @@ a.reservar {
   border:1px solid black;
   color:black;
   padding: 1px 4px;
+  display: inline-block;
+  width:91px;
+  text-align: center;
 }
 
-a.reservar:hover {
+a.reservar.reservado {
+  background:grey;
+  color:white;
+  border:grey;
+  cursor:default;
+}
+
+a.reservar.reservado.por-ti {
+  background:green;
+}
+
+a.reservar:hover:not(.reservado) {
   color:white;
   background:black;
 }

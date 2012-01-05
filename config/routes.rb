@@ -1,5 +1,6 @@
 Aleyjarri::Application.routes.draw do
   resources :invitaciones
+  resources :regalos
 
   controller :sesiones do
     get 'login' => :new

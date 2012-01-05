@@ -15,3 +15,19 @@ $ ->
   $('#titulo').click (e) ->
     e.preventDefault()
     $('#contenedor_texto, #mapa').hide()
+
+  $('a.reservar').click (e) ->
+    e.preventDefault()
+    $this = $(this)
+    return if $this.hasClass('reservado')
+    $.post($this.attr('href'), {_method:'PUT'}).
+    success((e) ->
+      $this.text('Reservado')
+      $this.addClass('reservado por-ti')
+      alert('¡Reservaste el regalo!')).
+    error((e) ->
+      $this.text('No disponible')
+      $this.addClass('reservado')
+      alert('¡El regalo ya fue reservado!'))
+      
+      
