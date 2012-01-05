@@ -1,3 +1,10 @@
+# Soporte RVM
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+require "rvm/capistrano"
+set :rvm_ruby_string, '1.9.2-p290'
+
+require 'bundler/capistrano'
+
 set :application, "aleyjarri"
 set :repository,  "git://github.com/jipumarino/aleyjarri.git"
 
