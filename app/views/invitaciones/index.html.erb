@@ -48,7 +48,7 @@
         <td><%= regalo.cantidad %></td>
         <td style="text-align:right">$<%= number_with_delimiter regalo.precio_pesos_chilenos, :delimiter => '.' %></td>
         <td>
-          <%= link_to "#{regalo.reservado? ? (regalo.reservado_por_id == session[:usuario_id] ? 'Reservado' : 'No disponible') : 'Reservar'}", regalo, :class => "reservar #{'reservado' if regalo.reservado?} #{'por-ti' if regalo.reservado_por_id == session[:usuario_id]}"  %>
+          <%= link_to "#{regalo.reservado? ? ((regalo.reservado_por_id == session[:usuario_id] or @usuario.regalo_reservado) ? 'Reservado' : 'No disponible') : 'Reservar'}", regalo, :class => "reservar #{'reservado' if regalo.reservado? or @usuario.regalo_reservado} #{'por-ti' if regalo.reservado_por_id == session[:usuario_id]}"  %>
         </td>
       </tr>
       <% end %>

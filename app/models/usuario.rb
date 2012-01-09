@@ -1,6 +1,7 @@
 require 'digest/sha1'
 
 class Usuario < ActiveRecord::Base
+  has_one :regalo_reservado, :class_name => 'Regalo', :foreign_key => 'reservado_por_id'
 
   def self.autenticar nombre, contrasena
     u = Usuario.find_by_nombre nombre
